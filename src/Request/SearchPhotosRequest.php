@@ -14,6 +14,7 @@ namespace WBW\Library\Pexels\Request;
 use WBW\Library\Core\Model\Attribute\IntegerPageTrait;
 use WBW\Library\Core\Model\Attribute\StringQueryTrait;
 use WBW\Library\Pexels\Model\Attribute\IntegerPerPageTrait;
+use WBW\Library\Pexels\Model\Attribute\StringOrientationTrait;
 
 /**
  * Search photos request.
@@ -26,6 +27,7 @@ class SearchPhotosRequest extends AbstractRequest {
     use IntegerPageTrait;
     use IntegerPerPageTrait;
     use StringQueryTrait;
+    use StringOrientationTrait;
 
     /**
      * Search photos resource path.
