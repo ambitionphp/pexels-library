@@ -101,6 +101,7 @@ class RequestSerializer {
         }
 
         ArrayHelper::set($result, "query", $request->getQuery());
+        ArrayHelper::set($result, "orientation", $request->getOrientation());
         ArrayHelper::set($result, "per_page", $request->getPerPage(), [null, SearchVideosRequest::PER_PAGE_DEFAULT]);
         ArrayHelper::set($result, "page", $request->getPage(), [null, 1]);
         ArrayHelper::set($result, "min_width", $request->getMinWidth(), [null]);
